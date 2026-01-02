@@ -49,14 +49,14 @@
                     </div>
                     <nav class="hidden md:flex space-x-8 text-sm font-medium" role="navigation"
                         aria-label="Main navigation">
+                        <a class="text-slate-700 dark:text-white font-bold text-primary dark:text-primary relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:bg-primary after:transition-all"
+                            href="index.html">Home</a>
                         <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
-                            href="#home">Home</a>
+                            href="Projects.html">Projects</a>
                         <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
-                            href="#projects">Projects</a>
+                            href="Articles.html">Articles</a>
                         <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
-                            href="#articles">Articles</a>
-                        <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
-                            href="#contact">Contact</a>
+                            href="Contact.html">Contact</a>
                     </nav>
 
                     <!-- Toggle Button -->
@@ -87,12 +87,22 @@
                              transition-all duration-500 ease-in-out dark:animate-pulse">⭐</span>
                         </div>
                     </button>
-                    <!-- 4. Button untuk toggle mobile menu -->
-                    <button
+                    <!-- Mobile menu button -->
+                    <button id="mobileMenuButton"
                         class="md:hidden p-2 rounded-md text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
                         aria-label="Toggle mobile menu" aria-expanded="false">
                         <span class="material-symbols-outlined" aria-hidden="true">menu</span>
                     </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white/80 dark:bg-background-dark/80 backdrop-blur-xl border-b border-border-light dark:border-border-dark">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium bg-primary/10 text-primary font-bold">Home</a>
+                    <a href="Projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800">Projects</a>
+                    <a href="Articles.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800">Articles</a>
+                    <a href="Contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
                 </div>
             </div>
         </header>
@@ -550,6 +560,19 @@
         </main>
 
         <script src="JS/theme-toggle.js"></script>
+        <script>
+            // Mobile menu toggle functionality
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+
+                // Update aria-expanded attribute
+                const isExpanded = !mobileMenu.classList.contains('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', isExpanded);
+            });
+        </script>
     </body>
 
 </html>

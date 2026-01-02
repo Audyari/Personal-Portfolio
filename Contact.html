@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact - Frontend Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="CSS/tailwind.config.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="bg-background-light dark:bg-background-dark text-slate-600 dark:text-slate-300 min-h-screen font-sans
+    antialiased transition-colors duration-300 selection:bg-secondary selection:text-white relative overflow-x-hidden">
+        <figure class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none" aria-hidden="true">
+            <div
+                class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-primary/30 rounded-full blur-3xl opacity-60 dark:opacity-20 mix-blend-multiply dark:mix-blend-normal">
+            </div>
+            <div
+                class="absolute top-[-10%] right-[-10%] w-96 h-96 bg-secondary/30 rounded-full blur-3xl opacity-60 dark:opacity-20 mix-blend-multiply dark:mix-blend-normal">
+            </div>
+            <div
+                class="absolute bottom-[-20%] left-[20%] w-96 h-96 bg-accent/30 rounded-full blur-3xl opacity-60 dark:opacity-20 mix-blend-multiply dark:mix-blend-normal">
+            </div>
+        </figure>
+
+        <header
+            class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-xl border-b border-border-light dark:border-border-dark shadow-sm"
+            role="banner">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center space-x-3 group cursor-pointer">
+                        <div
+                            class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center shadow-lg shadow-primary/20 transform group-hover:rotate-6 transition-transform duration-300">
+                            <span class="material-symbols-outlined text-white" aria-hidden="true">terminal</span>
+                        </div>
+                        <a href="index.html"
+                            class="font-bold text-xl tracking-tight text-slate-700 dark:text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary transition-all"
+                            aria-label="Home - Audyari Wiyono">
+                            Audyari Wiyono
+                        </a>
+                    </div>
+                    <nav class="hidden md:flex space-x-8 text-sm font-medium" role="navigation"
+                        aria-label="Main navigation">
+                        <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                            href="index.html">Home</a>
+                        <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                            href="Projects.html">Projects</a>
+                        <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                            href="Articles.html">Articles</a>
+                        <a class="text-slate-700 dark:text-white font-bold text-primary dark:text-primary relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-full after:bg-primary after:transition-all"
+                            href="Contact.html">Contact</a>
+                    </nav>
+
+                    <!-- Toggle Button -->
+                    <button id="themeToggle" onclick="toggleTheme()" class="relative w-20 h-10 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600
+                       dark:from-indigo-500 dark:via-purple-600 dark:to-purple-700
+                       rounded-full hover:scale-110 active:scale-95
+                       transition-all duration-500 ease-in-out cursor-pointer overflow-hidden
+                       pulse-light dark:pulse-dark">
+
+                        <!-- Background Circles dengan animasi -->
+                        <div class="absolute top-2 right-3 w-4 h-4 bg-white/40 rounded-full
+                        dark:bg-yellow-300/30 transition-all duration-500 animate-pulse"></div>
+                        <div class="absolute bottom-2 right-7 w-2 h-2 bg-white/30 rounded-full
+                        dark:bg-yellow-200/20 transition-all duration-500 animate-ping"></div>
+
+                        <!-- Slider dengan efek bouncy -->
+                        <div id="slider" class="absolute top-1 left-1 w-8 h-8 bg-gradient-to-br from-amber-200 via-yellow-300 to-orange-400
+                        dark:from-indigo-900 dark:via-purple-900 dark:to-purple-950
+                        rounded-full shadow-lg dark:shadow-purple-500/50
+                        transform dark:translate-x-10 transition-all duration-500 ease-out
+                        flex items-center justify-center">
+                            <!-- Sun Icon -->
+                            <span class="text-xl transform dark:opacity-0 dark:rotate-180 dark:scale-0
+                             transition-all duration-500 ease-in-out animate-spin-slow">🔆</span>
+                            <!-- Star Icon -->
+                            <span class="text-xl absolute opacity-0 rotate-[-180deg] scale-0
+                             dark:opacity-100 dark:rotate-0 dark:scale-100
+                             transition-all duration-500 ease-in-out dark:animate-pulse">⭐</span>
+                        </div>
+                    </button>
+                    <!-- Mobile menu button -->
+                    <button id="mobileMenuButton"
+                        class="md:hidden p-2 rounded-md text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white/80 dark:bg-background-dark/80 backdrop-blur-xl border-b border-border-light dark:border-border-dark">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800">Home</a>
+                    <a href="Projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800">Projects</a>
+                    <a href="Articles.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800">Articles</a>
+                    <a href="Contact.html" class="block px-3 py-2 rounded-md text-base font-medium bg-primary/10 text-primary font-bold">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="pt-10 pb-20 relative" role="main">
+            <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12 relative" role="article">
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-full bg-gradient-to-b from-transparent via-primary/5 to-transparent blur-3xl -z-10 rounded-full">
+                </div>
+                <header>
+                    <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight tracking-tight">
+                        <span class="gradient-text">Get In Touch</span>
+                    </h1>
+                    <p
+                        class="text-lg md:text-xl text-slate-500 dark:text-slate-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
+                        Have a project in mind or want to discuss potential opportunities? Feel free to reach out to me.
+                    </p>
+                </header>
+            </article>
+
+            <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" role="region" aria-label="Contact content">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="font-display text-2xl font-bold mb-6 text-slate-700 dark:text-white">Contact Information</h2>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-primary/10 p-3 rounded-lg">
+                                    <span class="material-symbols-outlined text-primary" aria-hidden="true">mail</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-slate-700 dark:text-white">Email</h3>
+                                    <p class="text-slate-500 dark:text-slate-400 mt-1">audyari@example.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-secondary/10 p-3 rounded-lg">
+                                    <span class="material-symbols-outlined text-secondary" aria-hidden="true">location_on</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-slate-700 dark:text-white">Location</h3>
+                                    <p class="text-slate-500 dark:text-slate-400 mt-1">Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-accent/10 p-3 rounded-lg">
+                                    <span class="material-symbols-outlined text-accent" aria-hidden="true">schedule</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-slate-700 dark:text-white">Working Hours</h3>
+                                    <p class="text-slate-500 dark:text-slate-400 mt-1">Monday - Friday: 9AM - 5PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h3 class="font-bold text-lg text-slate-700 dark:text-white mb-4">Follow Me</h3>
+                            <nav class="flex space-x-6" role="navigation" aria-label="Social media links">
+                                <a class="text-slate-400 hover:text-primary transition-all hover:scale-110 transform" href="#"
+                                    aria-label="Visit my GitHub profile (opens in new tab)">
+                                    <span class="sr-only">GitHub</span>
+                                    <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                        <path clip-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a class="text-slate-400 hover:text-secondary transition-all hover:scale-110 transform" href="#"
+                                    aria-label="Visit my LinkedIn profile (opens in new tab)">
+                                    <span class="sr-only">LinkedIn</span>
+                                    <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                        <path clip-rule="evenodd"
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a class="text-slate-400 hover:text-accent transition-all hover:scale-110 transform" href="#"
+                                    aria-label="Visit my Twitter profile (opens in new tab)">
+                                    <span class="sr-only">Twitter</span>
+                                    <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h2 class="font-display text-2xl font-bold mb-6 text-slate-700 dark:text-white">Send Me a Message</h2>
+                        
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-border-light dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-border-light dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Subject</label>
+                                <input type="text" id="subject" name="subject" required
+                                    class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-border-light dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Message</label>
+                                <textarea id="message" name="message" rows="5" required
+                                    class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-border-light dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"></textarea>
+                            </div>
+                            
+                            <button type="submit"
+                                class="w-full px-6 py-4 gradient-bg text-white font-semibold rounded-lg transition-all shadow-xl shadow-primary/30 hover:shadow-secondary/40 hover:-translate-y-1">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="JS/theme-toggle.js"></script>
+        <script>
+            // Mobile menu toggle functionality
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Update aria-expanded attribute
+                const isExpanded = !mobileMenu.classList.contains('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', isExpanded);
+            });
+        </script>
+    </body>
+
+</html>
