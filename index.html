@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Frontend Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="CSS/tailwind.config.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-600 dark:text-slate-300 min-h-screen font-sans antialiased transition-colors duration-300 selection:bg-secondary selection:text-white relative overflow-x-hidden">
+    <figure class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none" aria-hidden="true">
+        <div
+            class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-primary/30 rounded-full blur-3xl opacity-60 dark:opacity-20 mix-blend-multiply dark:mix-blend-normal">
+        </div>
+        <div
+            class="absolute top-[-10%] right-[-10%] w-96 h-96 bg-secondary/30 rounded-full blur-3xl opacity-60 dark:opacity-20 mix-blend-multiply dark:mix-blend-normal">
+        </div>
+        <div
+            class="absolute bottom-[-20%] left-[20%] w-96 h-96 bg-accent/30 rounded-full blur-3xl opacity-60 dark:opacity-20 mix-blend-multiply dark:mix-blend-normal">
+        </div>
+    </figure>
+
+    <header
+        class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-xl border-b border-border-light dark:border-border-dark shadow-sm"
+        role="banner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3 group cursor-pointer">
+                    <div
+                        class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center shadow-lg shadow-primary/20 transform group-hover:rotate-6 transition-transform duration-300">
+                        <span class="material-symbols-outlined text-white" aria-hidden="true">terminal</span>
+                    </div>
+                    <a href="#home"
+                        class="font-bold text-xl tracking-tight text-slate-700 dark:text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary transition-all"
+                        aria-label="Home - Your Name">
+                        Your Name
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8 text-sm font-medium" role="navigation"
+                    aria-label="Main navigation">
+                    <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                        href="#home">Home</a>
+                    <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                        href="#projects">Projects</a>
+                    <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                        href="#articles">Articles</a>
+                    <a class="text-slate-500 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                        href="#contact">Contact</a>
+                </nav>
+                <button
+                    class="md:hidden p-2 rounded-md text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-10 pb-20 relative" id="home" role="main">
+        <article class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 lg:py-32 relative" role="article">
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-full bg-gradient-to-b from-transparent via-primary/5 to-transparent blur-3xl -z-10 rounded-full">
+            </div>
+            <header>
+                <h1 class="font-display text-6xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">
+                    <span class="gradient-text">Frontend Developer</span>
+                </h1>
+                <p
+                    class="text-xl md:text-2xl text-slate-500 dark:text-slate-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
+                    Crafting beautiful, responsive, and accessible web experiences with <span
+                        class="text-secondary font-medium">modern technologies</span> and <span
+                        class="text-accent font-medium">vibrant designs</span>.
+                    <span class="block mt-4 text-sm font-sans text-slate-400 font-normal opacity-80">(HTML & Tailwind
+                        CSS -
+                        Pastel Edition)</span>
+                </p>
+            </header>
+            <nav class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6"
+                role="navigation" aria-label="Hero actions">
+                <a class="px-8 py-4 gradient-bg text-white font-semibold rounded-full transition-all shadow-xl shadow-primary/30 hover:shadow-secondary/40 hover:-translate-y-1 flex items-center"
+                    href="#projects">
+                    View My Work
+                    <span class="material-symbols-outlined ml-2 text-sm" aria-hidden="true">arrow_downward</span>
+                </a>
+                <a class="px-8 py-4 bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-white font-medium rounded-full hover:border-primary/50 dark:hover:border-primary/50 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all hover:-translate-y-1 flex items-center"
+                    href="#contact">
+                    Contact Me
+                    <span class="material-symbols-outlined ml-2 text-sm" aria-hidden="true">mail</span>
+                </a>
+            </nav>
+        </article>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="region" aria-label="Portfolio content">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+                <div class="lg:col-span-8 space-y-12">
+                    <section
+                        class="bg-white/60 dark:bg-card-dark/60 backdrop-blur-md rounded-2xl shadow-sm border border-white/20 dark:border-slate-700/50 overflow-hidden"
+                        id="projects" role="region" aria-labelledby="projects-heading">
+                        <header
+                            class="p-6 border-b border-border-light dark:border-border-dark bg-slate-50/50 dark:bg-slate-800/30 flex items-center justify-between">
+                            <h2 class="font-display text-2xl font-bold flex items-center gap-2 text-slate-700 dark:text-slate-200"
+                                id="projects-heading">
+                                <span class="w-2 h-8 rounded-full gradient-bg"></span>
+                                Projects
+                            </h2>
+                            <span class="material-symbols-outlined text-primary/70"
+                                aria-hidden="true">folder_open</span>
+                        </header>
+                        <ul class="divide-y divide-border-light dark:divide-border-dark" role="list">
+                            <li>
+                                <article>
+                                    <a class="block p-6 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group relative overflow-hidden"
+                                        href="#" aria-labelledby="project-1-title">
+                                        <div
+                                            class="absolute left-0 top-0 bottom-0 w-1 gradient-bg opacity-0 group-hover:opacity-100 transition-opacity">
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 id="project-1-title"
+                                                class="font-bold text-lg text-slate-700 dark:text-white group-hover:text-primary transition-colors">
+                                                HTML
+                                                Only Portfolio</h3>
+                                            <span
+                                                class="material-symbols-outlined text-slate-400 group-hover:text-secondary transform group-hover:translate-x-1 transition-all"
+                                                aria-hidden="true">arrow_forward</span>
+                                        </div>
+                                        <p
+                                            class="text-sm text-slate-500 dark:text-slate-400 mt-2 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">
+                                            A semantic, accessible portfolio template.</p>
+                                    </a>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a class="block p-6 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group relative overflow-hidden"
+                                        href="#" aria-labelledby="project-2-title">
+                                        <div
+                                            class="absolute left-0 top-0 bottom-0 w-1 gradient-bg opacity-0 group-hover:opacity-100 transition-opacity">
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 id="project-2-title"
+                                                class="font-bold text-lg text-slate-700 dark:text-white group-hover:text-primary transition-colors">
+                                                Calculator</h3>
+                                            <span
+                                                class="material-symbols-outlined text-slate-400 group-hover:text-secondary transform group-hover:translate-x-1 transition-all"
+                                                aria-hidden="true">arrow_forward</span>
+                                        </div>
+                                        <p
+                                            class="text-sm text-slate-500 dark:text-slate-400 mt-2 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">
+                                            Advanced scientific calculator with history.</p>
+                                    </a>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a class="block p-6 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group relative overflow-hidden"
+                                        href="#" aria-labelledby="project-3-title">
+                                        <div
+                                            class="absolute left-0 top-0 bottom-0 w-1 gradient-bg opacity-0 group-hover:opacity-100 transition-opacity">
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 id="project-3-title"
+                                                class="font-bold text-lg text-slate-700 dark:text-white group-hover:text-primary transition-colors">
+                                                Quiz
+                                                App</h3>
+                                            <span
+                                                class="material-symbols-outlined text-slate-400 group-hover:text-secondary transform group-hover:translate-x-1 transition-all"
+                                                aria-hidden="true">arrow_forward</span>
+                                        </div>
+                                        <p
+                                            class="text-sm text-slate-500 dark:text-slate-400 mt-2 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">
+                                            Timed quiz application with dynamic questions.</p>
+                                    </a>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a class="block p-6 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group relative overflow-hidden"
+                                        href="#" aria-labelledby="project-4-title">
+                                        <div
+                                            class="absolute left-0 top-0 bottom-0 w-1 gradient-bg opacity-0 group-hover:opacity-100 transition-opacity">
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 id="project-4-title"
+                                                class="font-bold text-lg text-slate-700 dark:text-white group-hover:text-primary transition-colors">
+                                                Countdown
+                                                Timer</h3>
+                                            <span
+                                                class="material-symbols-outlined text-slate-400 group-hover:text-secondary transform group-hover:translate-x-1 transition-all"
+                                                aria-hidden="true">arrow_forward</span>
+                                        </div>
+                                        <p
+                                            class="text-sm text-slate-500 dark:text-slate-400 mt-2 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">
+                                            Event countdown timer with local storage support.</p>
+                                    </a>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a class="block p-6 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all group relative overflow-hidden"
+                                        href="#" aria-labelledby="project-5-title">
+                                        <div
+                                            class="absolute left-0 top-0 bottom-0 w-1 gradient-bg opacity-0 group-hover:opacity-100 transition-opacity">
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <h3 id="project-5-title"
+                                                class="font-bold text-lg text-slate-700 dark:text-white group-hover:text-primary transition-colors">
+                                                Product
+                                                Upcoming Page</h3>
+                                            <span
+                                                class="material-symbols-outlined text-slate-400 group-hover:text-secondary transform group-hover:translate-x-1 transition-all"
+                                                aria-hidden="true">arrow_forward</span>
+                                        </div>
+                                        <p
+                                            class="text-sm text-slate-500 dark:text-slate-400 mt-2 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors">
+                                            Responsive landing page for product launches.</p>
+                                    </a>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section
+                        class="bg-white/60 dark:bg-card-dark/60 backdrop-blur-md rounded-2xl shadow-sm border border-white/20 dark:border-slate-700/50 overflow-hidden"
+                        role="region" aria-labelledby="experience-heading" id="experience">
+                        <header
+                            class="p-6 border-b border-border-light dark:border-border-dark bg-slate-50/50 dark:bg-slate-800/30 flex items-center justify-between">
+                            <h2 class="font-display text-2xl font-bold flex items-center gap-2 text-slate-700 dark:text-slate-200"
+                                id="experience-heading">
+                                <span class="w-2 h-8 rounded-full bg-secondary"></span>
+                                Work Experience
+                            </h2>
+                            <span class="material-symbols-outlined text-secondary/70"
+                                aria-hidden="true">work_outline</span>
+                        </header>
+                        <div class="p-8 space-y-10">
+                            <article class="relative pl-10 border-l-2 border-primary/20 dark:border-primary/10">
+                                <span
+                                    class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-white dark:ring-slate-800"></span>
+                                <h3 class="text-2xl font-bold text-slate-700 dark:text-white">roadmap.sh</h3>
+                                <p class="text-sm font-bold text-primary mb-3 uppercase tracking-wide">Frontend
+                                    Contributor</p>
+                                <p class="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                                    Solved all the frontend projects available on the platform, focusing on best
+                                    practices, accessibility, and clean code architecture.
+                                </p>
+                                <a class="inline-flex items-center text-sm font-bold text-primary hover:text-secondary transition-colors group"
+                                    href="#" aria-label="Visit roadmap.sh profile (opens in new tab)">
+                                    Visit my Profile <span
+                                        class="material-symbols-outlined text-sm ml-1 group-hover:translate-x-1 transition-transform"
+                                        aria-hidden="true">open_in_new</span>
+                                </a>
+                            </article>
+                            <article class="relative pl-10 border-l-2 border-secondary/20 dark:border-secondary/10">
+                                <span
+                                    class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-secondary ring-4 ring-white dark:ring-slate-800"></span>
+                                <h3 class="text-2xl font-bold text-slate-700 dark:text-white">OpenSource Work</h3>
+                                <p class="text-sm font-bold text-secondary mb-3 uppercase tracking-wide">Independent
+                                    Developer</p>
+                                <p class="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                                    Contributed to over 50 open-source projects. Developed and maintained personal
+                                    libraries and tools, accumulating over 200 GitHub stars from the community.
+                                </p>
+                                <a class="inline-flex items-center text-sm font-bold text-secondary hover:text-primary transition-colors group"
+                                    href="#" aria-label="Visit GitHub profile (opens in new tab)">
+                                    Visit my GitHub Profile <span
+                                        class="material-symbols-outlined text-sm ml-1 group-hover:translate-x-1 transition-transform"
+                                        aria-hidden="true">open_in_new</span>
+                                </a>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="lg:col-span-4 space-y-12">
+                    <section
+                        class="bg-white/60 dark:bg-card-dark/60 backdrop-blur-md rounded-2xl shadow-sm border border-white/20 dark:border-slate-700/50 overflow-hidden sticky top-24"
+                        role="region" aria-labelledby="education-heading" id="education">
+                        <header
+                            class="p-6 border-b border-border-light dark:border-border-dark bg-slate-50/50 dark:bg-slate-800/30 flex items-center justify-between">
+                            <h2 class="font-display text-2xl font-bold flex items-center gap-2 text-slate-700 dark:text-slate-200"
+                                id="education-heading">
+                                <span class="w-2 h-8 rounded-full bg-accent"></span>
+                                Education
+                            </h2>
+                            <span class="material-symbols-outlined text-accent/70" aria-hidden="true">school</span>
+                        </header>
+                        <div class="p-6">
+                            <article class="mb-8">
+                                <div
+                                    class="bg-gradient-to-r from-primary to-secondary text-white px-4 py-1.5 rounded-full text-xs font-bold inline-block mb-4 shadow-md shadow-primary/20">
+                                    3.76 / 4.0 CGPA
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-700 dark:text-white mb-2">BS Computer Science
+                                </h3>
+                                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                                    Graduated with high honors. Won the prestigious Acme Hackathon. Organized over 30
+                                    tech sessions and workshops for peers.
+                                </p>
+                            </article>
+                            <section aria-labelledby="courses-heading">
+                                <h4 class="font-bold text-slate-700 dark:text-white mb-4 text-sm uppercase tracking-wider border-b border-border-light dark:border-border-dark pb-2"
+                                    id="courses-heading">
+                                    Courses Taken</h4>
+                                <ul class="space-y-3" role="list">
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Object Oriented Programming
+                                    </li>
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Data Structures and Algorithms
+                                    </li>
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Web Engineering
+                                    </li>
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Artificial Intelligence
+                                    </li>
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Human Computer Interaction
+                                    </li>
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Computer Graphics
+                                    </li>
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Database Management Systems
+                                    </li>
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Distributed Database Systems
+                                    </li>
+                                    <li class="flex items-start text-sm text-slate-600 dark:text-slate-300">
+                                        <span class="material-symbols-outlined text-accent text-sm mr-2 mt-0.5 fill-1"
+                                            aria-hidden="true">check_circle</span>
+                                        Discrete Mathematics
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="mt-24 lg:mt-32" role="region" aria-labelledby="reviews-heading" id="reviews">
+                <div class="flex items-center space-x-6 mb-12">
+                    <h2 class="font-display text-4xl font-bold text-slate-700 dark:text-white" id="reviews-heading">
+                        Reviews from my Teachers
+                    </h2>
+                    <div class="h-1 bg-gradient-to-r from-primary/50 to-transparent flex-grow rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article
+                        class="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-lg shadow-slate-200/50 dark:shadow-none border border-border-light dark:border-border-dark hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 relative group">
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                        </div>
+                        <span class="material-symbols-outlined text-primary/20 text-5xl mb-6 absolute top-6 right-6"
+                            aria-hidden="true">format_quote</span>
+                        <blockquote
+                            class="text-slate-600 dark:text-slate-300 mb-8 italic leading-relaxed relative z-10">
+                            "John doe was a brilliant student; always stood out with his assignments. His code was
+                            clean, documented, and always submitted on time."
+                        </blockquote>
+                        <footer class="flex items-center pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <figure
+                                class="w-12 h-12 rounded-full bg-gradient-to-tr from-blue-300 to-purple-400 mr-4 shadow-md">
+                            </figure>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-700 dark:text-white">Jane Doe</h4>
+                                <p class="text-xs text-primary dark:text-primary font-bold uppercase tracking-wide">
+                                    Assistant Professor</p>
+                            </div>
+                        </footer>
+                    </article>
+                    <article
+                        class="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-lg shadow-slate-200/50 dark:shadow-none border border-border-light dark:border-border-dark hover:-translate-y-2 hover:shadow-xl hover:shadow-secondary/10 transition-all duration-300 relative group">
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                        </div>
+                        <span class="material-symbols-outlined text-secondary/20 text-5xl mb-6 absolute top-6 right-6"
+                            aria-hidden="true">format_quote</span>
+                        <blockquote
+                            class="text-slate-600 dark:text-slate-300 mb-8 italic leading-relaxed relative z-10">
+                            "One of the most dedicated students I've had. His understanding of complex algorithms and
+                            data structures is exceptional for his level."
+                        </blockquote>
+                        <footer class="flex items-center pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <figure
+                                class="w-12 h-12 rounded-full bg-gradient-to-tr from-pink-300 to-red-400 mr-4 shadow-md">
+                            </figure>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-700 dark:text-white">Jane Doe</h4>
+                                <p class="text-xs text-secondary dark:text-secondary font-bold uppercase tracking-wide">
+                                    Assistant Professor</p>
+                            </div>
+                        </footer>
+                    </article>
+                    <article
+                        class="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-lg shadow-slate-200/50 dark:shadow-none border border-border-light dark:border-border-dark hover:-translate-y-2 hover:shadow-xl hover:shadow-accent/10 transition-all duration-300 relative group">
+                        <div
+                            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left">
+                        </div>
+                        <span class="material-symbols-outlined text-accent/20 text-5xl mb-6 absolute top-6 right-6"
+                            aria-hidden="true">format_quote</span>
+                        <blockquote
+                            class="text-slate-600 dark:text-slate-300 mb-8 italic leading-relaxed relative z-10">
+                            "Consistently exceeded expectations in project work. A natural problem solver with a great
+                            eye for detail in frontend implementation."
+                        </blockquote>
+                        <footer class="flex items-center pt-4 border-t border-slate-100 dark:border-slate-800">
+                            <figure
+                                class="w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-300 to-emerald-400 mr-4 shadow-md">
+                            </figure>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-700 dark:text-white">Jane Doe</h4>
+                                <p class="text-xs text-accent dark:text-accent font-bold uppercase tracking-wide">
+                                    Assistant Professor</p>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </section>
+
+            <section class="mt-24 lg:mt-32" role="region" aria-labelledby="articles-heading" id="articles">
+                <div class="flex items-center space-x-6 mb-12">
+                    <h2 class="font-display text-4xl font-bold text-slate-700 dark:text-white" id="articles-heading">
+                        Articles
+                    </h2>
+                    <div class="h-1 bg-gradient-to-r from-primary/50 to-transparent flex-grow rounded-full"></div>
+                </div>
+                <div
+                    class="bg-white/60 dark:bg-card-dark/60 backdrop-blur-md rounded-2xl shadow-sm border border-white/20 dark:border-slate-700/50 overflow-hidden p-8 text-center">
+                    <p class="text-slate-500 dark:text-slate-400">Coming soon - Stay tuned for my latest articles and
+                        tutorials!</p>
+                </div>
+            </section>
+        </section>
+
+        <section
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 pt-12 border-t border-border-light dark:border-border-dark"
+            role="region" aria-labelledby="contact-heading" id="contact">
+            <footer class="text-center pb-12" role="contentinfo">
+                <h2 id="contact-heading" class="sr-only">Contact and Social Media Links</h2>
+                <nav class="mb-8 flex justify-center space-x-8" role="navigation" aria-label="Social media links">
+                    <a class="text-slate-400 hover:text-primary transition-all hover:scale-110 transform" href="#"
+                        aria-label="Visit my GitHub profile (opens in new tab)">
+                        <span class="sr-only">GitHub</span>
+                        <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path clip-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a class="text-slate-400 hover:text-secondary transition-all hover:scale-110 transform" href="#"
+                        aria-label="Visit my LinkedIn profile (opens in new tab)">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path clip-rule="evenodd"
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a class="text-slate-400 hover:text-accent transition-all hover:scale-110 transform" href="#"
+                        aria-label="Visit my Twitter profile (opens in new tab)">
+                        <span class="sr-only">Twitter</span>
+                        <svg aria-hidden="true" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                            </path>
+                        </svg>
+                    </a>
+                </nav>
+                <p class="text-slate-500 dark:text-slate-400 font-medium tracking-wide" role="text">© all rights
+                    reserved
+                    2025</p>
+            </footer>
+        </section>
+    </main>
+
+    <script>
+        // Dark mode toggle script placeholder
+        // You can add dark mode toggle functionality here
+    </script>
+</body>
+
+</html>
